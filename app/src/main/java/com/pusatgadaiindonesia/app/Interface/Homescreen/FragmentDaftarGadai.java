@@ -1,11 +1,13 @@
 package com.pusatgadaiindonesia.app.Interface.Homescreen;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -120,6 +122,28 @@ public class FragmentDaftarGadai extends Fragment implements View.OnClickListene
             riwayatGadai.setOnClickListener(this);
             layAktif.setOnClickListener(this);
             layRiwayat.setOnClickListener(this);
+
+            try {
+                String cek = getActivity().getIntent().getStringExtra("frgToLoad");
+//                Log.d("frgToLoad :", ""+cek);
+                if(cek != null){
+                    if(cek.equals("1")){
+                        layAktif.setVisibility(View.VISIBLE);
+                        layRiwayat.setVisibility(View.GONE);
+                        aktifSelected.setVisibility(View.VISIBLE);
+                        riwayatSelected.setVisibility(View.GONE);
+                    }else if(cek.equals("2")){
+                        layAktif.setVisibility(View.GONE);
+                        layRiwayat.setVisibility(View.VISIBLE);
+                        aktifSelected.setVisibility(View.GONE);
+                        riwayatSelected.setVisibility(View.VISIBLE);
+                    }else{
+
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override

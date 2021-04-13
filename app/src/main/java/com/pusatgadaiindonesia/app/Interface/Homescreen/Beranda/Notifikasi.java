@@ -72,12 +72,12 @@ public class Notifikasi extends AppCompatActivity implements View.OnClickListene
             }
         });
         swipeRefreshLayout.post(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        swipeRefreshLayout.setRefreshing(true);
-                                        getNotif();
-                                    }
-                                }
+                @Override
+                public void run() {
+                    swipeRefreshLayout.setRefreshing(true);
+                    getNotif();
+                }
+            }
         );
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -119,7 +119,14 @@ public class Notifikasi extends AppCompatActivity implements View.OnClickListene
                     String status = ""+response.body().getstatus();
                     if(status.equals("true"))
                     {
-
+                        swipeRefreshLayout.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    swipeRefreshLayout.setRefreshing(true);
+                                    getNotif();
+                                }
+                            }
+                        );
                     }
                     else
                     {
@@ -134,7 +141,7 @@ public class Notifikasi extends AppCompatActivity implements View.OnClickListene
                     String message = ""+getResources().getString(R.string.gagalCobaLagi);
                     try {
                         jObjError = new JSONObject(response.errorBody().string());
-                        message = ""+jObjError.getString("message");
+                        message = ""+jObjError.getString("reason");
                     } catch (JSONException e) {
                         e.printStackTrace();
                     } catch (IOException e) {

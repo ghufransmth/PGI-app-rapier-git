@@ -64,13 +64,13 @@ public class GadaiPembayaran extends AppCompatActivity implements View.OnClickLi
 
             case R.id.perpanjangan:
                 Intent intent = new Intent(GadaiPembayaran.this, Homescreen.class);
-                intent.putExtra("frgToLoad", 1);
+                intent.putExtra("frgToLoad", "1");
                 startActivityForResult(intent, 9);
                 break;
 
             case R.id.pelunasan:
                 Intent intent2 = new Intent(GadaiPembayaran.this, Homescreen.class);
-                intent2.putExtra("frgToLoad", 2);
+                intent2.putExtra("frgToLoad", "2");
                 startActivityForResult(intent2, 9);
                 break;
 

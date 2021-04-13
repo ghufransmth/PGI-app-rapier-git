@@ -326,14 +326,15 @@ public class FragmentBeranda2 extends Fragment implements View.OnClickListener{
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 111) {
-            swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-                @Override
-                public void onRefresh() {
-                    swipeRefreshLayout.setRefreshing(true);
-                    getCountNotif();
-                    getCountRiwayat();
+            swipeRefreshLayout.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.setRefreshing(true);
+                        getCountNotif();
+                        getCountRiwayat();
+                    }
                 }
-            });
+            );
         }else{
             Log.d(TAG, "onActivityResult: fail");
         }

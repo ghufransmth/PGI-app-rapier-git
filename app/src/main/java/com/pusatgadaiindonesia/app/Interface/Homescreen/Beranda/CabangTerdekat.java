@@ -265,14 +265,15 @@ public class CabangTerdekat extends AppCompatActivity implements View.OnClickLis
             e.printStackTrace();
         }
 
-        double radiusInMeters = 100.0;
-        int strokeColor = 0x0000; //red outline
-        int shadeColor = 0x00aacceeee; //opaque red fill
+        drawMarker(latLng);
 
-        CircleOptions circleOptions = new CircleOptions().center(latLng).radius(radiusInMeters).fillColor(R.color.blue_beranda).strokeColor(R.color.blue_dark_beranda).strokeWidth(8);
+        double radiusInMeters = 500;
+        CircleOptions circleOptions = new CircleOptions().center(latLng).radius(radiusInMeters)   //set radius in meters
+                .fillColor(Color.TRANSPARENT)  //default
+                .strokeColor(Color.CYAN)
+                .strokeWidth(5);
         mCircle = mGoogleMap.addCircle(circleOptions);
 
-        drawMarker(latLng);
         Log.d("draw","1");
     }
 

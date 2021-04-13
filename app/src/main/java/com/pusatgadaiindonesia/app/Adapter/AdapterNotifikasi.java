@@ -100,7 +100,7 @@ public class AdapterNotifikasi extends RecyclerView.Adapter<RecyclerView.ViewHol
             userViewHolder.parent.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    notifikasi.setHasRead(dataNotificationDetail.getgadaiId());
+                    notifikasi.setHasRead(dataNotificationDetail.getid());
                 }
             });
 

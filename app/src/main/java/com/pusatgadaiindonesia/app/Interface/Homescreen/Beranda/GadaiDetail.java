@@ -130,7 +130,7 @@ public class GadaiDetail extends AppCompatActivity implements View.OnClickListen
             @Override
             public boolean onQueryTextSubmit(String query) {
                 // filter recycler view when query submitted
-                Log.d("text: ",""+query);
+                //Log.d("text: ",""+query);
                 myAdapter.filter(query);
                 return false;
             }
@@ -138,7 +138,7 @@ public class GadaiDetail extends AppCompatActivity implements View.OnClickListen
             @Override
             public boolean onQueryTextChange(String query) {
                 // filter recycler view when text is changed
-                Log.d("text: ",""+query);
+                //Log.d("text: ",""+query);
                 myAdapter.filter(query);
                 return false;
             }

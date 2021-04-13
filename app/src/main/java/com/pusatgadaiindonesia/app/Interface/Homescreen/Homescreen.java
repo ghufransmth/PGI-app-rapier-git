@@ -428,13 +428,27 @@ public class Homescreen extends AppCompatActivity implements View.OnClickListene
             Log.d("frgToLoad :", ""+cek);
             if(cek != null){
                 if(cek.equals("1")){
-                    tab = tabLayout.getTabAt(1);
-                    tab.select();
+                    viewPager.setCurrentItem(1);
+                    imgBeranda.setImageResource(tabUnselected[0]);
+                    txtBeranda.setTextColor(getResources().getColor(R.color.grey_unselected));
+                    imgKontrak.setImageResource(tabSelected[1]);
+                    txtKontrak.setTextColor(getResources().getColor(R.color.blue_selected));
+                    imgProfil.setImageResource(tabUnselected[2]);
+                    txtProfil.setTextColor(getResources().getColor(R.color.grey_unselected));
+                    imgBantuan.setImageResource(tabUnselected[3]);
+                    txtBantuan.setTextColor(getResources().getColor(R.color.grey_unselected));
                 }else if(cek.equals("2")){
-                    tab = tabLayout.getTabAt(1);
-                    tab.select();
+                    viewPager.setCurrentItem(1);
+                    imgBeranda.setImageResource(tabUnselected[0]);
+                    txtBeranda.setTextColor(getResources().getColor(R.color.grey_unselected));
+                    imgKontrak.setImageResource(tabSelected[1]);
+                    txtKontrak.setTextColor(getResources().getColor(R.color.blue_selected));
+                    imgProfil.setImageResource(tabUnselected[2]);
+                    txtProfil.setTextColor(getResources().getColor(R.color.grey_unselected));
+                    imgBantuan.setImageResource(tabUnselected[3]);
+                    txtBantuan.setTextColor(getResources().getColor(R.color.grey_unselected));
                 }else{
-
+                    viewPager.setCurrentItem(0);
                 }
             }
         } catch (Exception e) {

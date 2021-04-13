@@ -1,6 +1,7 @@
 package com.pusatgadaiindonesia.app.Adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,7 +52,7 @@ public class AdapterMasterElektronik2 extends RecyclerView.Adapter<RecyclerView.
         this.option = option;
         myArrays = myArray;
         this.arraylist = new ArrayList<DataBarang>();
-        this.arraylist.addAll(myArray);
+        this.arraylist.addAll(myArrays);
 
         final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) mRecyclerView.getLayoutManager();
         mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -120,6 +121,22 @@ public class AdapterMasterElektronik2 extends RecyclerView.Adapter<RecyclerView.
     }
 
     // Filter Class
+//    public void filter(String charText) {
+//        //Log.d("test", "filter: "+charText);
+//        charText = charText.toLowerCase(Locale.getDefault());
+//        myArrays.clear();
+//        if (charText.length() == 0) {
+//            myArrays.addAll(arraylist);
+//        } else {
+//            for (DataBarang wp : arraylist) {
+//                if (wp.getname().toLowerCase(Locale.getDefault()).contains(charText)) {
+//                    myArrays.add(wp);
+//                }
+//            }
+//        }
+//        notifyDataSetChanged();
+//    }
+
     public void filter(String charText) {
         charText = charText.toLowerCase(Locale.getDefault());
         myArrays.clear();
@@ -127,13 +144,16 @@ public class AdapterMasterElektronik2 extends RecyclerView.Adapter<RecyclerView.
             myArrays.addAll(arraylist);
         } else {
             for (DataBarang wp : arraylist) {
-                if (wp.getname().toLowerCase(Locale.getDefault()).contains(charText)) {
+                if (wp.getname().toLowerCase(Locale.getDefault())
+                        .contains(charText)) {
                     myArrays.add(wp);
                 }
             }
         }
         notifyDataSetChanged();
     }
+
+
 
 
     @Override
