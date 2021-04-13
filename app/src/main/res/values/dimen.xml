@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="pt39">19sp</dimen>
+    <dimen name="pt36">16sp</dimen>
+    <dimen name="pt59">28sp</dimen>
+    <dimen name="pt25">12sp</dimen>
+    <dimen name="pt26">13sp</dimen>
+    <dimen name="pt18">11sp</dimen>
+    <dimen name="pt43">20sp</dimen>
+
+    <dimen name="toolbarTitle">18dp</dimen>
+</resources>

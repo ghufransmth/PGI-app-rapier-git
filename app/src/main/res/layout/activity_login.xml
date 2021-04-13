@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Auth.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp">
+        <!--            <TextView-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/century_gothic"-->
+        <!--                android:text="Selamat Datang\ndi aplikasi\nPusat Gadai\nIndonesia"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="20dp" />-->
+    </LinearLayout>
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="6"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cornerRadiusBL="0dp"
+        app:cornerRadiusBR="0dp"
+        app:cornerRadiusTL="0dp"
+        app:cornerRadiusTR="75dp"
+        app:shadowMarginBottom="0dp"
+        app:shadowMarginRight="0dp"
+        app:shadowMarginTop="10dp"
+        app:shadowRadius="75dp">
+
+        <LinearLayout
+            android:id="@+id/layUtama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--Include content here-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_content"
+                    android:orientation="vertical"
+                    android:padding="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Login"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/century_gothic"
+                        android:hint="Nomor Anggota"
+                        android:text=""
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:textColor="@color/grey_menu_text"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_background" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/century_gothic"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="@color/grey_menu_text"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_background" />
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_marginTop="30dp"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:orientation="horizontal">-->
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/forgot"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:fontFamily="@font/century_gothic_bold"-->
+                    <!--                                android:text="Lupa Password?"-->
+                    <!--                                android:textColor="@color/red_menu_text"-->
+                    <!--                                android:textSize="15dp" />-->
+                    <!--                            <TextView-->
+                    <!--                                android:layout_marginLeft="10dp"-->
+                    <!--                                android:layout_marginRight="10dp"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:fontFamily="@font/century_gothic"-->
+                    <!--                                android:text="atau"-->
+                    <!--                                android:textColor="@color/grey_menu_text"-->
+                    <!--                                android:textSize="15dp" />-->
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/registrasi"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:fontFamily="@font/century_gothic_bold"-->
+                    <!--                                android:text="Registrasi"-->
+                    <!--                                android:textColor="@color/blue_selected"-->
+                    <!--                                android:textSize="15dp" />-->
+                    <!--                        </LinearLayout>-->
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/masuk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_blue_button"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic_bold"
+                    android:text="Masuk"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.loopeer.shadow.ShadowView>
+</LinearLayout>

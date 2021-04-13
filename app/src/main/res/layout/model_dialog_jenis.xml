@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:gravity="center_vertical"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_dialog_white_top_rounded">
+    <TextView
+        android:padding="12dp"
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/century_gothic"
+        android:text="Pilihan 1"
+        android:textColor="@color/grey_menu_text"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+    <TextView
+        android:padding="12dp"
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/century_gothic"
+        android:text="Pilihan 2"
+        android:textColor="@color/grey_menu_text"
+        android:textSize="15dp" />
+</LinearLayout>

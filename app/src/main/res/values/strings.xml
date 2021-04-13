@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pusat Gadai Indonesia</string>
+    <string name="balanceSaatIni">Balance Saat Ini</string>
+    <string name="beranda">Beranda</string>
+    <string name="kontrak">Daftar Gadai</string>
+    <string name="profil">Profil</string>
+    <string name="bantuan">Bantuan</string>
+
+
+    <string name="mohonTunggu">Mohon Tunggu</string>
+    <string name="gagalCobaLagi">Gagal ! Silakan coba lagi</string>
+    <string name="usernameEmailTidakBolehKosong">Username/Email tidak boleh kosong</string>
+    <string name="passwordTidakBolehKosong">Password tidak boleh kosong</string>
+    <string name="title_activity_maps_dummy">Map</string>
+
+    <string name="dialog_title_batal_transaksi">Apakah anda yakin <br/> ingin membatalkan Transaksi ?</string>
+    <string name="btn_batal_transaksi">Batalkan <br/> Transaksi </string>
+    <string name="btn_lanjut_transaksi">Lanjutkan <br/> Transaksi </string>
+</resources>

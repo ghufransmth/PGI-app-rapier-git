@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pusatgadaiindonesia.app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Interface.Homescreen.Beranda.CabangTerdekatSelect"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".Interface.Auth.ForgotPassword" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="Database1.db" /> <!-- end of database version -->
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiKendaraan3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiKendaraan2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiBPKB3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiBPKB2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiElektronik2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiBPKB"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Profile.EditProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Interface.Homescreen.Profile.EditProfile2" />
+        <activity android:name=".Interface.Homescreen.Beranda.DetailPengajuan" />
+        <activity android:name=".Interface.Homescreen.Beranda.DetailPembayaran" />
+        <activity android:name=".Interface.Homescreen.Beranda.GadaiKategori" />
+        <activity android:name=".Interface.Homescreen.Beranda.GadaiDetail" />
+        <activity android:name=".Interface.Homescreen.Beranda.GadaiPembayaran" />
+        <activity android:name=".Interface.Homescreen.Beranda.GadaiElektronik3" />
+        <activity android:name=".Interface.Homescreen.Beranda.GadaiKendaraan4" />
+        <activity android:name=".Interface.Homescreen.Beranda.Riwayat" />
+        <activity android:name=".Interface.Homescreen.DaftarGadai.InquiryPembayaran" />
+        <activity android:name=".Interface.Homescreen.DaftarGadai.MetodePembayaran" />
+        <activity android:name=".Interface.Homescreen.DaftarGadai.ConfirmPembayaran" />
+        <activity android:name=".Interface.Homescreen.Beranda.NewsFeedDetail" />
+        <activity android:name=".Interface.Homescreen.Beranda.NewsFeed" />
+        <activity android:name=".Interface.Homescreen.Beranda.CabangTerdekat" />
+        <activity android:name=".Interface.Homescreen.Beranda.BeliPulsaListrik" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiKendaraan"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Homescreen.Beranda.GadaiElektronik"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Interface.Homescreen.Beranda.Notifikasi" />
+        <activity
+            android:name=".Interface.Homescreen.Homescreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Auth.Signup"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Interface.Auth.Login"
+            android:windowSoftInputMode="adjustPan" >
+
+        </activity>
+        <activity
+            android:name=".Interface.Homescreen.Splashscreen">
+
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".Services.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Services.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

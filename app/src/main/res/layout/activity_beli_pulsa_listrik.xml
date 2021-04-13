@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Homescreen.Beranda.BeliPulsaListrik"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_arrow_left"/>
+        <TextView
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="Beli Pulsa Listrik"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarTitle" />
+    </LinearLayout>
+    <!--<com.loopeer.shadow.ShadowView
+        app:shadowColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:elevation="5dp"
+        android:background="@color/white"
+        app:cornerRadiusBL="0dp"
+        app:cornerRadiusTL="0dp"
+        app:cornerRadiusTR="75dp"
+        app:cornerRadiusBR="0dp"
+        app:shadowMarginTop="10dp"
+        app:shadowMarginRight="0dp"
+        app:shadowMarginBottom="0dp"
+        app:shadowRadius="75dp">-->
+    <LinearLayout
+        android:background="@drawable/background_content_grey"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layUtama"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--Include content here-->
+            <!--<ScrollView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">-->
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="32dp">
+                    <LinearLayout
+                        android:id="@+id/tipe"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/background_dropdown"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textListrik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Listrik Prabayar"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="15dp" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_arrow_bottom_white"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/idMeter"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="No. Meter/ID Pelanggan"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_background"/>
+
+                    <LinearLayout
+                        android:id="@+id/nominal"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/background_dropdown"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textNominal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Rp20.000"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="15dp" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_arrow_bottom_white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/background_dialog_balance_white_all_rounded">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Keterangan"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="16dp" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="1. Informasi kode token  yang anda bayar akan dikirimkan maksimal 2x24 jam"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="2. Pembelian token litrik tidak dapat dilakkan pada jam 23:00 - 23:59"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/lanjut"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="#1EB2E7"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="5dp">
+                        <LinearLayout
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:background="@color/green_beranda"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic_bold"
+                                android:text="Bayar"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            <!--</ScrollView>-->
+        </LinearLayout>
+        <!--</com.loopeer.shadow.ShadowView>-->
+    </LinearLayout>
+</LinearLayout>

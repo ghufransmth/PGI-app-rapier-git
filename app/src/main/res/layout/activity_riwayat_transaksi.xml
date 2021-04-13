@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Homescreen.FragmentProfile"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_arrow_left"/>
+            <TextView
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic_bold"
+                android:text="Riwayat Transaksi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbarTitle" />
+        </LinearLayout>
+        <com.loopeer.shadow.ShadowView
+            app:shadowColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:elevation="5dp"
+            android:background="@color/grey_background"
+            app:cornerRadiusBL="0dp"
+            app:cornerRadiusTL="0dp"
+            app:cornerRadiusTR="75dp"
+            app:cornerRadiusBR="20dp"
+            app:shadowMarginTop="10dp"
+            app:shadowMarginRight="0dp"
+            app:shadowMarginBottom="0dp"
+            app:shadowRadius="75dp">
+
+            <LinearLayout
+                android:id="@+id/layUtama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_content_grey"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <!--Include content here-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/pengajuan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtPengajuanGadai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="Pengajuan Gadai"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:id="@+id/aktifSelected"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/blue_dark_beranda"
+                                android:orientation="horizontal" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/pembayaran"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtPembayaran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="Pembayaran"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:id="@+id/riwayatSelected"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/blue_dark_beranda"
+                                android:orientation="horizontal"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:background="#FF2521"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp">
+
+                        <TextView
+                            android:id="@+id/textstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic_bold"
+                            android:text="Semua Status"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_dark_beranda"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_arrow_drop_down_grey_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/layAktif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:visibility="visible">
+                    <!--Include content here-->
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/refresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layRiwayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--Include content here-->
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/refresh2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.loopeer.shadow.ShadowView>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v7.widget.CardView
+                android:orientation="vertical"
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="75dp"
+                app:cardElevation="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

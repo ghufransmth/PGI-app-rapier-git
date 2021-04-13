@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:minHeight="300dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_dialog_red">
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/ic_close_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="MKY-230"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="Macbook Pro 2019"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_dialog_white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic_bold"
+                android:text="Total Pinjaman"
+                android:textColor="@color/grey_menu_text"
+                android:textSize="11dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic_bold"
+                android:text="7.400.000"
+                android:textColor="@color/grey_menu_text"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_menu_text_soft"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="Terbayar"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="9dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="6.200.000"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="Sisa"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="9dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="1.200.000"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:background="@color/white"
+            app:cornerRadiusBL="30dp"
+            app:cornerRadiusTL="0dp"
+            app:cornerRadiusTR="0dp"
+            app:cornerRadiusBR="30dp"
+            app:shadowMarginTop="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowMarginBottom="15dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowRadius="75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Cicilan Bulan Ini"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="260.000 IDR"
+                        android:textColor="@color/red_dialog"
+                        android:textSize="23dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Jatuh Tempo : 12 Desember 2019"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="8dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/button_bayar"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.loopeer.shadow.ShadowView>
+
+    </LinearLayout>
+</LinearLayout>

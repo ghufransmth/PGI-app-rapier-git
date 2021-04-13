@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1FBEF0</color>
+    <color name="colorPrimaryDark">#078EB8</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="blue_selected">#1FBEF0</color>
+    <color name="grey_unselected">#858689</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_beranda">#97C856</color>
+    <color name="green_light_beranda">#97C856</color>
+    <color name="green_dark_beranda">#009B1A</color>
+    <color name="blue_beranda">#134CB3</color>
+    <color name="blue_dark_beranda">#00579B</color>
+    <color name="red_beranda">#FF0000</color>
+    <color name="red_light_beranda">#FF0000</color>
+    <color name="red_dark_beranda">#C70000</color>
+    <color name="pink_beranda">#FF6B6B</color>
+    <color name="black">#000000</color>
+    <color name="hijau">#AFF89A</color>
+
+    <color name="gradient_start">#00B2EC</color>
+    <color name="gradient_end">#006599</color>
+    <color name="grey_menu_text">#929497</color>
+    <color name="grey_menu_text_soft">#C0C2C4</color>
+    <color name="red_menu_text">#C48E8E</color>
+    <color name="grey_background">#F2F5F8</color>
+    <color name="red_dialog">#BF2C3C</color>
+</resources>

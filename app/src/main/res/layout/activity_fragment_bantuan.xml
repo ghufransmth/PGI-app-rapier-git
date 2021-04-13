@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Auth.Signup"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center">
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="Bantuan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarTitle" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/background_content_grey"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layUtama"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--Include content here-->
+            <!--<ScrollView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="35dp">
+
+                </LinearLayout>
+            </ScrollView>-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/input"
+                    android:gravity="top|left"
+                    android:layout_margin="40dp"
+                    android:background="@color/grey_background"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/grey_menu_text_soft"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/century_gothic"
+                    android:text=""
+                    android:hint="Tulis keluhan atau saran anda disini"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/keluhan"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Keluhan"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="@dimen/pt36" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/keluhanSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/blue_selected"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"/>
+                    <RelativeLayout
+                        android:id="@+id/saran"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Saran"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="@dimen/pt36" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/saranSelected"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/blue_selected"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/background_blue_button_bottom_radius"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Kirim"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic_bold"
+                    android:text="Pusat Gadai Indonesia"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="Jl Otista Raya No. 90, RT.1/RW/7, Kp. Melayu, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13330 "
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="www.pusatgadaiindonesia.com"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="11dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="021 293 848584"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_menu_text"
+                    android:textSize="11dp"
+                    android:visibility="gone" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lanjut"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="#1EB2E7"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+                    <LinearLayout
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:background="@color/green_beranda"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic_bold"
+                            android:text="Info Layanan"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

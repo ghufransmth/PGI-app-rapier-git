@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "284523297726",
+    "project_id": "pgi-mobile",
+    "storage_bucket": "pgi-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284523297726:android:895c9ab5a33437d236d7ef",
+        "android_client_info": {
+          "package_name": "com.pusatgadaiindonesia.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284523297726-o0qd31stphp5blaubooin1d66svk4aoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpRUDKYF69vF3ZezDg98rCDxqCk5xdmF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284523297726-o0qd31stphp5blaubooin1d66svk4aoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284523297726:android:8c2184a2c131833f36d7ef",
+        "android_client_info": {
+          "package_name": "com.pusatgadaiindonesia.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284523297726-o0qd31stphp5blaubooin1d66svk4aoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpRUDKYF69vF3ZezDg98rCDxqCk5xdmF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284523297726-o0qd31stphp5blaubooin1d66svk4aoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

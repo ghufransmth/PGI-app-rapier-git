@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Homescreen.FragmentProfile"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_arrow_left"/>
+            <TextView
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic_bold"
+                android:text="Detail Transaksi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbarTitle" />
+        </LinearLayout>
+        <com.loopeer.shadow.ShadowView
+            app:shadowColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:elevation="5dp"
+            android:background="@color/grey_background"
+            app:cornerRadiusBL="0dp"
+            app:cornerRadiusTL="0dp"
+            app:cornerRadiusTR="75dp"
+            app:cornerRadiusBR="20dp"
+            app:shadowMarginTop="10dp"
+            app:shadowMarginRight="0dp"
+            app:shadowMarginBottom="0dp"
+            app:shadowRadius="75dp">
+
+            <LinearLayout
+                android:id="@+id/layUtama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_content_grey"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Status"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Berhasil"
+                        android:textColor="@color/blue_dark_beranda"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LinearLayout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/grey_menu_text_soft"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Tanggal Transaksi"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/tglTransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Kategori"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/kategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Nomor Faktur"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/noFaktur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Nama Barang"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/namaBarang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Virtual Account Number"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/va"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Metode Bayar"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/metodeBayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Total Tagihan"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:id="@+id/totalTagihan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/batalkan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/red_dark_beranda"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic_bold"
+                            android:text="Batalkan Transaksi"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </com.loopeer.shadow.ShadowView>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v7.widget.CardView
+                android:orientation="vertical"
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="75dp"
+                app:cardElevation="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

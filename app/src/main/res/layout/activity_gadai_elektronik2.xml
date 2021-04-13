@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Homescreen.Beranda.GadaiElektronik2"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_arrow_left"/>
+        <TextView
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="Gadai Elektronik"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarTitle" />
+    </LinearLayout>
+    <!--<com.loopeer.shadow.ShadowView
+        app:shadowColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:elevation="5dp"
+        android:background="@color/white"
+        app:cornerRadiusBL="0dp"
+        app:cornerRadiusTL="0dp"
+        app:cornerRadiusTR="75dp"
+        app:cornerRadiusBR="0dp"
+        app:shadowMarginTop="10dp"
+        app:shadowMarginRight="0dp"
+        app:shadowMarginBottom="0dp"
+        app:shadowRadius="75dp">-->
+    <LinearLayout
+        android:background="@drawable/background_content_grey"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layUtama"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--Include content here-->
+            <ScrollView
+                android:paddingBottom="10dp"
+                android:layout_marginTop="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingBottom="32dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="DATA PINJAMAN"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lokasi"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="35dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/background_dropdown"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textLokasi"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Pilih cabang gadai"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="15dp" />
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_arrow_bottom_white"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Tanggal Kredit"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textDay"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="20"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="Oktober"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="2020"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Nilai Pinjaman"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textAlignment="textStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Rp"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="15dp" />
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <!--<EditText
+                                android:textCursorDrawable="@null"
+                                android:textColorHint="@color/grey_menu_text_soft"
+                                android:textAlignment="textStart"
+                                android:background="@color/grey_background"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text=""
+                                android:hint=""
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />-->
+                            <TextView
+                                android:id="@+id/textLoan"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="textStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="3.000.000"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_menu_text_soft"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Tarif Sewa Modal"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/layPria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/radioPria"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/ic_radio_button_checked"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="0 - 15 hari"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layWanita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/radioWanita"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/ic_radio_button_checked"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="16 - 30 hari"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/simpan"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_height="wrap_content"
+                android:background="#1EB2E7"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@color/green_beranda"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Simpan"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--</com.loopeer.shadow.ShadowView>-->
+    </LinearLayout>
+</LinearLayout>

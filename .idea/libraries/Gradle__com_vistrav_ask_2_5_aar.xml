@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vistrav:ask:2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22bd33368fcd76b33974f67f9ca17e22/jetified-ask-2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22bd33368fcd76b33974f67f9ca17e22/jetified-ask-2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22bd33368fcd76b33974f67f9ca17e22/jetified-ask-2.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vistrav/ask/2.5/c38eb4d86c2f17db628e01bef744d68b568ad8b7/ask-2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vistrav/ask/2.5/a5e031bc7559baf682b0d575f55a5d4640ef91fd/ask-2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

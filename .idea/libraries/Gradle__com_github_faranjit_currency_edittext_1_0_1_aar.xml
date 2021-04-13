@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.faranjit:currency-edittext:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb3132d36e6f9e9a244b5b461d0b4461/jetified-currency-edittext-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb3132d36e6f9e9a244b5b461d0b4461/jetified-currency-edittext-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb3132d36e6f9e9a244b5b461d0b4461/jetified-currency-edittext-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.faranjit/currency-edittext/1.0.1/219f4a3fd870399ddcdfcb630126268dd11b0ccd/currency-edittext-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.faranjit/currency-edittext/1.0.1/c4a02db38578739a9542f2e64f94457166a25eea/currency-edittext-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

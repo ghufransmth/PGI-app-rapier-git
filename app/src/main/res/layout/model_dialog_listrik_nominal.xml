@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_dialog_white_top_rounded">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s1a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 20.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp20.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s2a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 50.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp50.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s3a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 100.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp100.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s4a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 200.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s4b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp200.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s5a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 500.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp500.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s6a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 1.000.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp1.000.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/s7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/s7a"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Token 5.000.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/s7b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:text="Rp5.000.000"
+            android:textColor="@color/grey_menu_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

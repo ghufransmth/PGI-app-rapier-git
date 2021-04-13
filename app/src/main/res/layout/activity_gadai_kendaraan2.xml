@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pusatgadaiindonesia.app.Interface.Homescreen.Beranda.GadaiKendaraan2"
+    android:background="@drawable/gradient_head"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_arrow_left"/>
+        <TextView
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="Gadai Kendaraan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarTitle" />
+    </LinearLayout>
+    <!--<com.loopeer.shadow.ShadowView
+        app:shadowColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:elevation="5dp"
+        android:background="@color/white"
+        app:cornerRadiusBL="0dp"
+        app:cornerRadiusTL="0dp"
+        app:cornerRadiusTR="75dp"
+        app:cornerRadiusBR="0dp"
+        app:shadowMarginTop="10dp"
+        app:shadowMarginRight="0dp"
+        app:shadowMarginBottom="0dp"
+        app:shadowRadius="75dp">-->
+    <LinearLayout
+        android:background="@drawable/background_content_grey"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layUtama"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--Include content here-->
+            <ScrollView
+                android:paddingBottom="10dp"
+                android:layout_marginTop="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingBottom="32dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="DATA STNK"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/editStnkNama"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="Atas Nama"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_menu_text_soft"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layPajak"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textAlignment="textStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/century_gothic"
+                            android:text="Tanggal Berakhir Pajak Kendaraan"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="15dp" />
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txtPajak"
+                                android:textAlignment="textStart"
+                                android:background="@color/grey_background"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="dd / mm / yyyy"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"></LinearLayout>
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_right"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_menu_text_soft"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/background_dialog_balance_white_all_rounded">
+                        <EditText
+                            android:id="@+id/editStnkAlamat"
+                            android:gravity="top"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="50dp"
+                            android:fontFamily="@font/century_gothic"
+                            android:text=""
+                            android:hint="Alamat STNK"
+                            android:textColor="@color/grey_menu_text"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="25dp"
+                        android:textAlignment="textStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Tanggal Kredit"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textDay"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="18"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="Desember"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_dropdown"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/century_gothic"
+                                android:text="2019"
+                                android:textColor="@color/grey_menu_text"
+                                android:textSize="15dp" />
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>-->
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_arrow_bottom_white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="DATA BPKB"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:id="@+id/editBpkbNo"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="No. BPKB"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_menu_text_soft"/>
+
+                    <EditText
+                        android:id="@+id/editBpkbNama"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="Atas Nama"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_menu_text_soft"/>
+
+                    <EditText
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:id="@+id/editBpkbNoMesin"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="No Mesin"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_menu_text_soft"/>
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/editBpkbNoRangka"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/grey_menu_text_soft"
+                        android:textAlignment="textStart"
+                        android:background="@color/grey_background"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic"
+                        android:text=""
+                        android:hint="No Rangka"
+                        android:textColor="@color/grey_menu_text"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_menu_text_soft"/>
+
+                </LinearLayout>
+            </ScrollView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lanjut"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_height="wrap_content"
+                android:background="#1EB2E7"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@color/green_beranda"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/century_gothic_bold"
+                        android:text="Lanjut"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--</com.loopeer.shadow.ShadowView>-->
+    </LinearLayout>
+</LinearLayout>
